@@ -18,12 +18,30 @@ class FeedPage extends StatelessWidget {
             style:TextStyle(color:Colors.black),
           ),
           Icon(Icons.more_vert,color:Colors.blue[300]),
-          
         ],
         ),
         
       ),
-      body:Center(child:Text('Feed')),
+      body:Column(
+        children:[
+          Row(
+            children: [
+              Padding(
+              padding:const EdgeInsets.all(8.0),
+              child:Container(
+                width:80,
+                height:80,
+                
+                decoration:BoxDecoration(
+                  shape:BoxShape.circle,
+                  color:Colors.blue[300],
+                )
+              ),
+            )
+            ],
+          )
+        ],
+        ),
     );
   }
 }
